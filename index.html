@@ -8,48 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
+    
     
     <title>Document</title>
 </head>
 <body>
 
-    <div class="window-container">
+    <div class="window-container grid">
         <h1 class="intro-heading">hello and welcome to your daily planner. today's date is:</h1>
         <h2 class="date-holder"></h2>
 
         <div class="card">
-            <input type="text">
+            <textarea id="nine-input" type="text" placeholder="nine in the morning..."></textarea>
+            <button class="btn" id="nine-btn">save</button>
         </div>
+        
         <div class="card">
-            
+            <textarea id="nine-save" type="text" placeholder="nine in the morning..."></textarea>
         </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
-        <div class="card">
-            
-        </div>
+        
+        
     </div>
     
 
     
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
