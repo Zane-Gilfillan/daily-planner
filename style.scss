@@ -4,3 +4,30 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 14rem;
+    pad: 5rem;
+
+    .test {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem;
+
+        button {
+            position: relative;
+            top: 1rem;
+        }
+
+        p {
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+}
