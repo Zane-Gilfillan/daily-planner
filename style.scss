@@ -31,6 +31,14 @@ $light-color: rgb(240, 229, 229);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
+    justify-content: center;
+    
+}
+
+//hide function
+
+.hide {
+    display: none;
 }
 
 
@@ -51,7 +59,7 @@ body {
 
     width: 80rem;
     height: 100rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .7); 
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -63,6 +71,7 @@ body {
         content: "";
         position: absolute;
         background: inherit;
+        background-repeat: repeat-y;
         z-index: -1;
         top: 0;
         left: 0;
@@ -90,7 +99,7 @@ body {
         height: 20rem;
         width: 40rem;
         // background-color: rgb(166, 162, 204);
-        opacity: .2;
+        opacity: .7;
         margin: 1rem;
         padding: 1rem;
         border-radius: 10%;
@@ -100,8 +109,8 @@ body {
             color: $light-color;
             // height: 15rem;
             // width: 30rem;
-            max-height: 17rem;
-            max-width: 37rem;
+            height: 17rem;
+            width: 37rem;
             font-size: 2rem;
         }
 
