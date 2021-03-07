@@ -10,6 +10,21 @@
 
 $light-color: rgb(240, 229, 229);
 
+//scroll bar edit
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(74, 59, 161, 0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(88, 58, 196, 0.5); 
+}
+
 
 
 //main code
@@ -34,7 +49,7 @@ body {
     position: relative;
     z-index: 1;
     background: inherit;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 5%;
 
     &:before {
@@ -59,5 +74,24 @@ body {
     .date-holder {
         font-size: 2rem;
         color: $light-color;
+    }
+
+    .card {
+        height: 20rem;
+        width: 40rem;
+        background-color: rgb(166, 162, 204);
+        opacity: .2;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10%;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            background-color: black;
+            color: $light-color;
+            height: 3rem;
+            font-size: 2rem;
+        }
     }
 }
