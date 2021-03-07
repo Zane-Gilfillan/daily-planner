@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    
     <title>Document</title>
 </head>
 <body>
 
-    <div class="test">
-        <p>my name is: <input type="text" id="user-name" value=""></p>
-        <button id="button-one">run</button>
-        <br>
-        <p id="name-save"></p>
-
-        <p>my email is: <input type="text" id="user-email" value=""></p>
-        <button id="button-two">run</button>
-        <br>
-        <p id="email-save"></p>
+    <div class="window-container">
+        <h1 class="intro-heading">hello and welcome to your daily planner. today's date is:</h1>
+        <h2 class="date-holder"></h2>
     </div>
     
 
     
+
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 </body>
 </html>
