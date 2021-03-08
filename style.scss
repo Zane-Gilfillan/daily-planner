@@ -1,3 +1,5 @@
+@import 'terminal-style.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -88,8 +90,9 @@ body {
     }
 
     .date-holder {
-        font-size: 2rem;
+        font-size: 4rem;
         color: $light-color;
+        
     }
 
     .card {
@@ -127,6 +130,7 @@ body {
             letter-spacing: 0.02em;
             text-decoration: none;
             z-index: 1;
+            cursor: pointer;
     
             //animation for button glitch
             &:before,
@@ -186,3 +190,4 @@ body {
     75%  {transform: translate(1px, -1px);}
     100%  {transform: translate(-1px, 1px);}
 }
+
