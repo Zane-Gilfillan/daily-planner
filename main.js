@@ -103,3 +103,79 @@ function renderOneTask() {
 }
 
 renderOneTask();
+
+//TWO PM FUNCTIONALITY
+const twoSave = document.getElementById('two-save')
+const twoBtn = $('#two-btn')
+
+twoBtn.click( () => {
+    let twoTask = document.getElementById('two-input').value;
+    localStorage.setItem('two-pm-task', twoTask)
+
+    renderTwoTask();
+})
+
+function renderTwoTask() {
+    let twoData = localStorage.getItem('two-pm-task')
+    twoSave.textContent = twoData
+    $('#two-save').removeClass('hide')
+}
+
+renderTwoTask();
+
+//THRE PM FUNCTIONALITY
+const threeSave = document.getElementById('three-save')
+const threeBtn = $('#three-btn')
+
+threeBtn.click( () => {
+    let threeTask = document.getElementById('three-input').value;
+    localStorage.setItem('three-pm-task', threeTask)
+
+    renderThreeTask();
+})
+
+function renderThreeTask() {
+    let threeData = localStorage.getItem('three-pm-task')
+    threeSave.textContent = threeData
+    $('#three-save').removeClass('hide')
+}
+
+renderThreeTask();
+
+//FOUR PM FUNCTIONALITY
+const fourSave = document.getElementById('four-save')
+const fourBtn = $('#four-btn')
+
+fourBtn.click( () => {
+    let fourTask = document.getElementById('four-input').value;
+    localStorage.setItem('four-pm-task', fourTask)
+
+    renderFourTask()
+})
+
+function renderFourTask() {
+    let fourData = localStorage.getItem('four-pm-task')
+    fourSave.textContent = fourData
+    $('#four-save').removeClass('hide')
+}
+
+renderFourTask();
+
+//FIVE PM FUNCTIONALITY
+const fiveSave = document.getElementById('five-save')
+const fiveBtn = $('#five-btn')
+
+fiveBtn.click( () => {
+    let fiveTask = document.getElementById('five-input').value;
+    localStorage.setItem('five-pm-task', fiveTask)
+
+    renderFiveTask();
+})
+
+function renderFiveTask() {
+    let fiveData = localStorage.getItem('five-pm-task')
+    fiveSave.textContent = fiveData
+    $('#five-save').removeClass('hide')
+}
+
+renderFiveTask();
