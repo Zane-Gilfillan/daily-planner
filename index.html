@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
     
-    <title>Document</title>
+    <title>Mandatory Daily Planner</title>
 </head>
-<body class="grid">
+<body class="body-grid">
 
     <!-- FAKE TERMINAL STYLE -->
     <div class="terminal space shadow">
@@ -25,11 +27,20 @@
             <div class="title">bash -- 70x32</div>
         </div>
         <pre class="body text-link">
-    commands:
-    hello, and welcome to your madatory planning application planing log
+    console.log(alarm):
+        hello, and welcome to your madatory planning application log.
+        please remember to fully fill out your log or credits will 
+        be deducted from you account. thank you for your undersand-
+        ing in these difficult times
 
+        console.log(currentDate):  <h2 class="date-holder"></h2>
 
-    today's current believed date is : <h2 class="date-holder"></h2>
+        console.log(myHopes, myDreams): Uncaught ReferenceError: 
+                                        myHopes is not defined
+        console.log(preWarImg): Uncaught ReferenceError: 
+                                        preWarImg do not exist
+        console.log(totalCredits): balance: 
+                                        your total {CREDITS} = 2.400
         </pre>
     </div>
 
@@ -38,115 +49,120 @@
         
 
         <!-- LAYOUT FOR ALL TEXT INPUTS 9AM-5PM -->
-        <div class="grid">
+        <div class="full-window-holder">
+            <h1 href="http://www.kikk.be/2016/" data-content="ようこそ// user \\頑張ってください" class="welcome-text text-link">ようこそ// user \\頑張ってください</h1>
+            <br>
+            <div class="grid">
 
-            <!-- row one NINE AM -->
-            <div class="card">
-                <textarea id="nine-input" type="text" placeholder="nine in the morning..."></textarea>
-                <button class="btn" id="nine-btn">save</button>
+                <!-- row one NINE AM -->
+                <div class="card">
+                    <textarea id="nine-input" type="text" placeholder="nine in the morning..."></textarea>
+                    <button class="btn" id="nine-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="nine-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="nine-delete">delete</button>
+                </div>
+    
+                <!-- row two TEN AM -->
+                <div class="card">
+                    <textarea id="ten-input" type="text" placeholder="ten in the morning..."></textarea>
+                    <button class="btn" id="ten-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="ten-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="ten-delete">delete</button>
+                </div>
+    
+                <!-- row three ELEVEN AM -->
+    
+                <div class="card">
+                    <textarea id="eleven-input" type="text" placeholder="eleven in the morning..."></textarea>
+                    <button class="btn" id="eleven-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="eleven-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="eleven-delete">delete</button>
+                </div>
+    
+                <!-- row four 12 PM  -->
+    
+                <div class="card">
+                    <textarea id="twelve-input" type="text" placeholder="twelve in the afternoon..."></textarea>
+                    <button class="btn" id="twelve-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="twelve-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="twelve-delete">delete</button>
+                </div>
+    
+                <!-- row five 1 PM -->
+    
+                <div class="card">
+                    <textarea id="one-input" type="text" placeholder="one in the afternoon..."></textarea>
+                    <button class="btn" id="one-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="one-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="one-delete">delete</button>
+                </div>
+    
+                <!-- row six 2 PM -->
+    
+                <div class="card">
+                    <textarea id="two-input" type="text" placeholder="two in the afternoon..."></textarea>
+                    <button class="btn" id="two-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="two-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="two-delete">delete</button>
+                </div>
+    
+                <!-- row seven 3PM -->
+    
+                <div class="card">
+                    <textarea id="three-input" type="text" placeholder="three in the afternoon..."></textarea>
+                    <button class="btn" id="three-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="three-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="three-delete">delete</button>
+                </div>
+    
+                <!-- row eight 4 PM -->
+    
+                <div class="card">
+                    <textarea id="four-input" type="text" placeholder="four in the afternoon..."></textarea>
+                    <button class="btn" id="four-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="four-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="four-delete">delete</button>
+                </div>
+    
+                <!-- row nine -->
+    
+                <div class="card">
+                    <textarea id="five-input" type="text" placeholder="five in the afternoon..."></textarea>
+                    <button class="btn" id="five-btn">save</button>
+                </div>
+                
+                <div class="card">
+                    <textarea class="hide" id="five-save" type="text" placeholder=""></textarea>
+                    <button class="btn" id="five-delete">delete</button>
+                </div>
+    
             </div>
-            
-            <div class="card">
-                <textarea class="hide" id="nine-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="nine-delete">delete</button>
-            </div>
-
-            <!-- row two TEN AM -->
-            <div class="card">
-                <textarea id="ten-input" type="text" placeholder="ten in the morning..."></textarea>
-                <button class="btn" id="ten-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="ten-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="ten-delete">delete</button>
-            </div>
-
-            <!-- row three ELEVEN AM -->
-
-            <div class="card">
-                <textarea id="eleven-input" type="text" placeholder="eleven in the morning..."></textarea>
-                <button class="btn" id="eleven-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="eleven-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="eleven-delete">delete</button>
-            </div>
-
-            <!-- row four 12 PM  -->
-
-            <div class="card">
-                <textarea id="twelve-input" type="text" placeholder="twelve in the afternoon..."></textarea>
-                <button class="btn" id="twelve-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="twelve-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="twelve-delete">delete</button>
-            </div>
-
-            <!-- row five 1 PM -->
-
-            <div class="card">
-                <textarea id="one-input" type="text" placeholder="one in the afternoon..."></textarea>
-                <button class="btn" id="one-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="one-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="one-delete">delete</button>
-            </div>
-
-            <!-- row six 2 PM -->
-
-            <div class="card">
-                <textarea id="two-input" type="text" placeholder="two in the afternoon..."></textarea>
-                <button class="btn" id="two-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="two-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="two-delete">delete</button>
-            </div>
-
-            <!-- row seven 3PM -->
-
-            <div class="card">
-                <textarea id="three-input" type="text" placeholder="three in the afternoon..."></textarea>
-                <button class="btn" id="three-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="three-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="three-delete">delete</button>
-            </div>
-
-            <!-- row eight 4 PM -->
-
-            <div class="card">
-                <textarea id="four-input" type="text" placeholder="four in the afternoon..."></textarea>
-                <button class="btn" id="four-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="four-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="four-delete">delete</button>
-            </div>
-
-            <!-- row nine -->
-
-            <div class="card">
-                <textarea id="five-input" type="text" placeholder="five in the afternoon..."></textarea>
-                <button class="btn" id="five-btn">save</button>
-            </div>
-            
-            <div class="card">
-                <textarea class="hide" id="five-save" type="text" placeholder=""></textarea>
-                <button class="btn" id="five-delete">delete</button>
-            </div>
-
         </div>
+        
     </div>
     
 

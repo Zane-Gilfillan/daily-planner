@@ -4,6 +4,8 @@ const datePlace = document.querySelector('.date-holder')
 const dayJsObject = dayjs();
 datePlace.innerHTML = dayJsObject.format("DD//MMM//YYYY HH:mm")
 
+console.log(dayJsObject)
+
 //NINE AM FUNCTIONALITY
 const nineSave = document.getElementById('nine-save')
 const nineBtn = $('#nine-btn')
@@ -237,3 +239,7 @@ fiveDelete.click( () => {
 })
 
 renderFiveTask();
+
+
+console.log('hello [instert USER ID], it appears you are trying to [insert user ACTION] our files. please be advised that if you continue [USER ACTIONS] you may suffer [insert current module of TECH DAMAGE] as well as a deduction of [*total* {USER ID credit}].')  
+
